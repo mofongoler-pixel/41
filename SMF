@@ -146,7 +146,7 @@ local SaveManager = {} do
 	end
 
 	function SaveManager:RefreshConfigList()
-		local list = listfiles(self.Folder .. "/settings")
+		local list = listfiles(self.Folder .. "/settings") or {}
 
 		local out = {}
 		for i = 1, #list do
