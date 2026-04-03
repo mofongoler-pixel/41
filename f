@@ -524,7 +524,7 @@ local aa = {
                 k(
                 "TextLabel",
                 {
-                    FontFace = Font.new "rbxasset://fonts/families/GothamSSm.json",
+                    FontFace = Font.new "rbxasset://fonts/families/Montserrat.json",
                     TextColor3 = Color3.fromRGB(200, 200, 200),
                     TextSize = 14,
                     TextWrapped = true,
@@ -656,7 +656,7 @@ local aa = {
                 "TextLabel",
                 {
                     FontFace = Font.new(
-                        "rbxasset://fonts/families/GothamSSm.json",
+                        "rbxasset://fonts/families/Montserrat.json",
                         Enum.FontWeight.SemiBold,
                         Enum.FontStyle.Normal
                     ),
@@ -685,8 +685,8 @@ local aa = {
                     ThemeTag = {BackgroundColor3 = "Dialog"}
                 },
                 {
-                    p("UICorner", {CornerRadius = UDim.new(0, 12)}),
-                    p("UIStroke", {Transparency = 0.5, ThemeTag = {Color = "DialogBorder"}}),
+                    p("UICorner", {CornerRadius = UDim.new(0, 16)}),
+                    p("UIStroke", {Transparency = 0.55, ThemeTag = {Color = "DialogBorder"}}),
                     s.Scale,
                     s.Title,
                     s.ButtonHolderFrame
@@ -750,13 +750,12 @@ local aa = {
                     "TextLabel",
                     {
                         FontFace = Font.new(
-                            "rbxasset://fonts/families/GothamSSm.json",
-                            Enum.FontWeight.Medium,
+                            "rbxasset://fonts/families/Montserrat.json",
+                            Enum.FontWeight.SemiBold,
                             Enum.FontStyle.Normal
                         ),
                         Text = m,
-                        TextColor3 = Color3.fromRGB(240, 240, 240),
-                        TextSize = 15,
+                        TextSize = 14,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         Size = UDim2.new(1, 0, 0, 14),
                         BackgroundColor3 = Color3.fromRGB(255, 255, 255),
@@ -768,17 +767,16 @@ local aa = {
                     k(
                     "TextLabel",
                     {
-                        FontFace = Font.new "rbxasset://fonts/families/GothamSSm.json",
+                        FontFace = Font.new "rbxasset://fonts/families/Montserrat.json",
                         Text = n,
-                        TextColor3 = Color3.fromRGB(150, 150, 150),
-                        TextSize = 12,
+                        TextSize = 11,
                         TextWrapped = true,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         BackgroundColor3 = Color3.fromRGB(255, 255, 255),
                         AutomaticSize = Enum.AutomaticSize.Y,
                         BackgroundTransparency = 1,
                         Size = UDim2.new(1, 0, 0, 14),
-                        --ThemeTag = {TextColor3 = "SubText"}
+                        ThemeTag = {TextColor3 = "SubText"}
                     }
                 )
             q.LabelHolder = k(
@@ -808,7 +806,7 @@ local aa = {
                 k(
                 "UIStroke",
                 {
-                    Transparency = 0.6,
+                    Transparency = 0.7,
                     ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
                     ThemeTag = {Color = "ElementBorder"}
                 }
@@ -824,7 +822,7 @@ local aa = {
                     Text = "",
                     LayoutOrder = 7
                 },
-                {k("UICorner", {CornerRadius = UDim.new(0, 11)}), q.Border, q.LabelHolder}
+                {k("UICorner", {CornerRadius = UDim.new(0, 13)}), q.Border, q.LabelHolder}
             )
             function q.SetTitle(r, s)
                 q.TitleLabel.Text = s
@@ -927,11 +925,10 @@ local aa = {
                     Position = UDim2.new(0, 14, 0, 17),
                     Text = q.Title,
                     RichText = true,
-                    TextColor3 = Color3.fromRGB(255, 255, 255),
                     TextTransparency = 0,
-                    FontFace = Font.new "rbxasset://fonts/families/GothamSSm.json",
+                    FontFace = Font.new("rbxasset://fonts/families/Montserrat.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal),
                     TextSize = 13,
-                    TextXAlignment = "Center",
+                    TextXAlignment = "Left",
                     TextYAlignment = "Center",
                     Size = UDim2.new(1, -12, 0, 12),
                     TextWrapped = true,
@@ -943,28 +940,26 @@ local aa = {
                 n(
                 "TextLabel",
                 {
-                    FontFace = Font.new "rbxasset://fonts/families/GothamSSm.json",
+                    FontFace = Font.new("rbxasset://fonts/families/Montserrat.json", Enum.FontWeight.Medium, Enum.FontStyle.Normal),
                     Text = q.Content,
-                    TextColor3 = Color3.fromRGB(255, 255, 0),
-                    TextSize = 14,
-                    TextXAlignment = Enum.TextXAlignment.Center,
+                    TextSize = 13,
+                    TextXAlignment = Enum.TextXAlignment.Left,
                     AutomaticSize = Enum.AutomaticSize.Y,
                     Size = UDim2.new(1, 0, 0, 14),
                     BackgroundColor3 = Color3.fromRGB(255, 255, 255),
                     BackgroundTransparency = 1,
                     TextWrapped = true,
-                    --ThemeTag = {TextColor3 = "Text"}
+                    ThemeTag = {TextColor3 = "Text"}
                 }
             )
             r.SubContentLabel =
                 n(
                 "TextLabel",
                 {
-                    FontFace = Font.new "rbxasset://fonts/families/GothamSSm.json",
+                    FontFace = Font.new "rbxasset://fonts/families/Montserrat.json",
                     Text = q.SubContent,
-                    TextColor3 = Color3.fromRGB(240, 240, 240),
-                    TextSize = 14,
-                    TextXAlignment = Enum.TextXAlignment.Center,
+                    TextSize = 12,
+                    TextXAlignment = Enum.TextXAlignment.Left,
                     AutomaticSize = Enum.AutomaticSize.Y,
                     Size = UDim2.new(1, 0, 0, 14),
                     BackgroundColor3 = Color3.fromRGB(255, 255, 255),
@@ -1105,16 +1100,16 @@ local aa = {
                             Text = k,
                             TextTransparency = 0,
                             FontFace = Font.new(
-                                "rbxasset://fonts/families/GothamSSm.json",
-                                Enum.FontWeight.SemiBold,
+                                "rbxasset://fonts/families/Montserrat.json",
+                                Enum.FontWeight.Bold,
                                 Enum.FontStyle.Normal
                             ),
-                            TextSize = 18,
-                            TextXAlignment = "Center",
+                            TextSize = 11,
+                            TextXAlignment = "Left",
                             TextYAlignment = "Center",
                             Size = UDim2.new(1, -16, 0, 18),
                             Position = UDim2.fromOffset(7, 2),
-                            ThemeTag = {TextColor3 = "Text"}
+                            ThemeTag = {TextColor3 = "SubText"}
                         }
                     ),
                     m.Container
@@ -1163,13 +1158,13 @@ local aa = {
                 k(
                 "TextButton",
                 {
-                    Size = UDim2.new(1, 0, 0, 34),
+                    Size = UDim2.new(1, 0, 0, 36),
                     BackgroundTransparency = 1,
                     Parent = s,
                     ThemeTag = {BackgroundColor3 = "Tab"}
                 },
                 {
-                    k("UICorner", {CornerRadius = UDim.new(0, 11)}),
+                    k("UICorner", {CornerRadius = UDim.new(0, 10)}),
                     k(
                         "TextLabel",
                         {
@@ -1180,8 +1175,8 @@ local aa = {
                             TextColor3 = Color3.fromRGB(255, 255, 255),
                             TextTransparency = 0,
                             FontFace = Font.new(
-                                "rbxasset://fonts/families/GothamSSm.json",
-                                Enum.FontWeight.Regular,
+                                "rbxasset://fonts/families/Montserrat.json",
+                                Enum.FontWeight.Medium,
                                 Enum.FontStyle.Normal
                             ),
                             TextSize = 12,
@@ -1327,7 +1322,7 @@ local aa = {
                 l(
                 "TextBox",
                 {
-                    FontFace = Font.new "rbxasset://fonts/families/GothamSSm.json",
+                    FontFace = Font.new "rbxasset://fonts/families/Montserrat.json",
                     TextColor3 = Color3.fromRGB(200, 200, 200),
                     TextSize = 14,
                     TextXAlignment = Enum.TextXAlignment.Left,
@@ -1372,12 +1367,12 @@ local aa = {
                     ThemeTag = {BackgroundColor3 = n and "Input" or "DialogInput"}
                 },
                 {
-                    l("UICorner", {CornerRadius = UDim.new(0, 10)}),
+                    l("UICorner", {CornerRadius = UDim.new(0, 11)}),
                     l(
                         "UIStroke",
                         {
                             ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
-                            Transparency = n and 0.5 or 0.65,
+                            Transparency = n and 0.55 or 0.65,
                             ThemeTag = {Color = n and "InElementBorder" or "DialogButtonBorder"}
                         }
                     ),
@@ -1525,11 +1520,11 @@ local aa = {
                                     RichText = true,
                                     Text = n.Title,
                                     FontFace = Font.new(
-                                        "rbxasset://fonts/families/GothamSSm.json",
-                                        Enum.FontWeight.SemiBold,
+                                        "rbxasset://fonts/families/Montserrat.json",
+                                        Enum.FontWeight.Bold,
                                         Enum.FontStyle.Normal
                                     ),
-                                    TextSize = 13,
+                                    TextSize = 14,
                                     TextXAlignment = "Left",
                                     TextYAlignment = "Center",
                                     Size = UDim2.fromScale(0, 1),
@@ -1543,10 +1538,10 @@ local aa = {
                                 {
                                     RichText = true,
                                     Text = n.SubTitle,
-                                    TextTransparency = 0.5,
+                                    TextTransparency = 0.45,
                                     FontFace = Font.new(
-                                        "rbxasset://fonts/families/GothamSSm.json",
-                                        Enum.FontWeight.Regular,
+                                        "rbxasset://fonts/families/Montserrat.json",
+                                        Enum.FontWeight.Light,
                                         Enum.FontStyle.Normal
                                     ),
                                     TextSize = 12,
@@ -1637,7 +1632,7 @@ local aa = {
                 s(
                     "Frame",
                     {
-                        Size = UDim2.fromOffset(3, 0),
+                        Size = UDim2.fromOffset(4, 0),
                         BackgroundColor3 = Color3.fromRGB(76, 194, 255),
                         Position = UDim2.fromOffset(0, 17),
                         AnchorPoint = Vector2.new(0, 0.5),
@@ -1681,8 +1676,8 @@ local aa = {
                     RichText = true,
                     Text = "Tab",
                     TextTransparency = 0,
-                    FontFace = Font.new("rbxasset://fonts/families/GothamSSm.json", Enum.FontWeight.SemiBold, Enum.FontStyle.Normal),
-                    TextSize = 28,
+                    FontFace = Font.new("rbxasset://fonts/families/Montserrat.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal),
+                    TextSize = 26,
                     TextXAlignment = "Center",
                     TextYAlignment = "Center",
                     Size = UDim2.new(1, -16, 0, 28),
@@ -1744,7 +1739,7 @@ local aa = {
             )
             v.SelectorSizeMotor:onStep(
                 function(K)
-                    D.Size = UDim2.new(0, 4, 0, K)
+                    D.Size = UDim2.new(0, 5, 0, K)
                 end
             )
             v.ContainerBackMotor:onStep(
@@ -1899,7 +1894,7 @@ local aa = {
                     s(
                     "TextLabel",
                     {
-                        FontFace = Font.new "rbxasset://fonts/families/GothamSSm.json",
+                        FontFace = Font.new "rbxasset://fonts/families/Montserrat.json",
                         Text = O.Content,
                         TextColor3 = Color3.fromRGB(240, 240, 240),
                         TextSize = 14,
@@ -2216,7 +2211,7 @@ local aa = {
                                 "TextLabel",
                                 {
                                     FontFace = Font.new(
-                                        "rbxasset://fonts/families/GothamSSm.json",
+                                        "rbxasset://fonts/families/Montserrat.json",
                                         Enum.FontWeight.Medium,
                                         Enum.FontStyle.Normal
                                     ),
@@ -2656,7 +2651,7 @@ local aa = {
                     "TextLabel",
                     {
                         FontFace = Font.new(
-                            "rbxasset://fonts/families/GothamSSm.json",
+                            "rbxasset://fonts/families/Montserrat.json",
                             Enum.FontWeight.Regular,
                             Enum.FontStyle.Normal
                         ),
@@ -2696,11 +2691,11 @@ local aa = {
                         ThemeTag = {BackgroundColor3 = "DropdownFrame"}
                     },
                     {
-                        e("UICorner", {CornerRadius = UDim.new(0, 8)}),
+                        e("UICorner", {CornerRadius = UDim.new(0, 10)}),
                         e(
                             "UIStroke",
                             {
-                                Transparency = 0.5,
+                                Transparency = 0.55,
                                 ApplyStrokeMode = Enum.ApplyStrokeMode.Border,
                                 ThemeTag = {Color = "InElementBorder"}
                             }
@@ -2734,7 +2729,7 @@ local aa = {
                 {Size = UDim2.fromScale(1, 0.6), ThemeTag = {BackgroundColor3 = "DropdownHolder"}},
                 {
                     t,
-                    e("UICorner", {CornerRadius = UDim.new(0, 10)}),
+                    e("UICorner", {CornerRadius = UDim.new(0, 12)}),
                     e(
                         "UIStroke",
                         {ApplyStrokeMode = Enum.ApplyStrokeMode.Border, ThemeTag = {Color = "DropdownBorder"}}
@@ -2865,7 +2860,7 @@ local aa = {
                         e(
                             "TextLabel",
                             {
-                                FontFace = Font.new "rbxasset://fonts/families/GothamSSm.json",
+                                FontFace = Font.new "rbxasset://fonts/families/Montserrat.json",
                                 Text = I,
                                 TextColor3 = Color3.fromRGB(200, 200, 200),
                                 TextSize = 13,
@@ -3164,7 +3159,7 @@ local aa = {
                 "TextLabel",
                 {
                     FontFace = Font.new(
-                        "rbxasset://fonts/families/GothamSSm.json",
+                        "rbxasset://fonts/families/Montserrat.json",
                         Enum.FontWeight.Regular,
                         Enum.FontStyle.Normal
                     ),
@@ -3397,7 +3392,7 @@ local aa = {
                 ai(
                     "TextLabel",
                     {
-                        FontFace = Font.new "rbxasset://fonts/families/GothamSSm.json",
+                        FontFace = Font.new "rbxasset://fonts/families/Montserrat.json",
                         Text = "Value",
                         TextSize = 12,
                         TextWrapped = true,
@@ -3495,32 +3490,30 @@ local aa = {
             i.DescLabel.Size = UDim2.new(1, -54, 0, 14)
             h.SetTitle = i.SetTitle
             h.SetDesc = i.SetDesc
-            local j, k =
+            local j =
                 ai(
-                    "ImageLabel",
+                    "Frame",
                     {
                         AnchorPoint = Vector2.new(0, 0.5),
-                        Size = UDim2.fromOffset(14, 14),
+                        Size = UDim2.fromOffset(16, 16),
                         Position = UDim2.new(0, 2, 0.5, 0),
-                        Image = "http://www.roblox.com/asset/?id=12266946128",
-                        ImageTransparency = 0.5,
-                        ThemeTag = {ImageColor3 = "ToggleSlider"}
-                    }
-                ),
-                ai("UIStroke", {Transparency = 0, ThemeTag = {Color = "ToggleSlider"}})
+                        BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+                    },
+                    {ai("UICorner", {CornerRadius = UDim.new(1, 0)})}
+                )
             local l =
                 ai(
                 "Frame",
                 {
-                    Size = UDim2.fromOffset(36, 18),
+                    Size = UDim2.fromOffset(40, 20),
                     AnchorPoint = Vector2.new(1, 0.5),
                     Position = UDim2.new(1, -10, 0.5, 0),
                     Parent = i.Frame,
                     BackgroundTransparency = 0,
-                    ThemeTag = {BackgroundColor3 = "Accent"},
+                    ThemeTag = {BackgroundColor3 = "ToggleSlider"},
                 },
-                {ai("UICorner", {CornerRadius = UDim.new(0, 11)}), k, j}
-            )            
+                {ai("UICorner", {CornerRadius = UDim.new(1, 0)}), j}
+            )
             function h.OnChanged(m, n)
                 h.Changed = n
                 n(h.Value)
@@ -3528,19 +3521,12 @@ local aa = {
             function h.SetValue(m, n)
                 n = not (not n)
                 h.Value = n
-                ah.OverrideTag(k, {Color = Color3.new(255, 255, 255) and "Accent" or "ToggleSlider"})
-                ah.OverrideTag(j, {ImageColor3 = h.Value and "ToggleToggled" or "ToggleSlider"})
+                ah.OverrideTag(l, {BackgroundColor3 = h.Value and "Accent" or "ToggleSlider"})
                 af:Create(
                     j,
-                    TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out),
-                    {Position = UDim2.new(0, h.Value and 19 or 2, 0.5, 0)}
+                    TweenInfo.new(0.22, Enum.EasingStyle.Quint, Enum.EasingDirection.Out),
+                    {Position = UDim2.new(0, h.Value and 22 or 2, 0.5, 0)}
                 ):Play()
-                af:Create(
-                    l,
-                    TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out),
-                    {BackgroundTransparency = h.Value and 0 or 1}
-                ):Play()
-                j.ImageTransparency = h.Value and 0 or 1
                 g:SafeCallback(h.Callback, h.Value)
                 g:SafeCallback(h.Changed, h.Value)
             end
