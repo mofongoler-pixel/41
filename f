@@ -524,7 +524,7 @@ local aa = {
                 k(
                 "TextLabel",
                 {
-                    FontFace = Font.new "rbxasset://fonts/families/Montserrat.json",
+                    FontFace = Font.new "rbxasset://fonts/families/JetBrainsMono.json",
                     TextColor3 = Color3.fromRGB(200, 200, 200),
                     TextSize = 14,
                     TextWrapped = true,
@@ -656,7 +656,7 @@ local aa = {
                 "TextLabel",
                 {
                     FontFace = Font.new(
-                        "rbxasset://fonts/families/Montserrat.json",
+                        "rbxasset://fonts/families/JetBrainsMono.json",
                         Enum.FontWeight.SemiBold,
                         Enum.FontStyle.Normal
                     ),
@@ -750,7 +750,7 @@ local aa = {
                     "TextLabel",
                     {
                         FontFace = Font.new(
-                            "rbxasset://fonts/families/Montserrat.json",
+                            "rbxasset://fonts/families/JetBrainsMono.json",
                             Enum.FontWeight.SemiBold,
                             Enum.FontStyle.Normal
                         ),
@@ -767,7 +767,7 @@ local aa = {
                     k(
                     "TextLabel",
                     {
-                        FontFace = Font.new "rbxasset://fonts/families/Montserrat.json",
+                        FontFace = Font.new "rbxasset://fonts/families/JetBrainsMono.json",
                         Text = n,
                         TextSize = 11,
                         TextWrapped = true,
@@ -926,7 +926,7 @@ local aa = {
                     Text = q.Title,
                     RichText = true,
                     TextTransparency = 0,
-                    FontFace = Font.new("rbxasset://fonts/families/Montserrat.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal),
+                    FontFace = Font.new("rbxasset://fonts/families/JetBrainsMono.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal),
                     TextSize = 13,
                     TextXAlignment = "Left",
                     TextYAlignment = "Center",
@@ -940,7 +940,7 @@ local aa = {
                 n(
                 "TextLabel",
                 {
-                    FontFace = Font.new("rbxasset://fonts/families/Montserrat.json", Enum.FontWeight.Medium, Enum.FontStyle.Normal),
+                    FontFace = Font.new("rbxasset://fonts/families/JetBrainsMono.json", Enum.FontWeight.Medium, Enum.FontStyle.Normal),
                     Text = q.Content,
                     TextSize = 13,
                     TextXAlignment = Enum.TextXAlignment.Left,
@@ -956,7 +956,7 @@ local aa = {
                 n(
                 "TextLabel",
                 {
-                    FontFace = Font.new "rbxasset://fonts/families/Montserrat.json",
+                    FontFace = Font.new "rbxasset://fonts/families/JetBrainsMono.json",
                     Text = q.SubContent,
                     TextSize = 12,
                     TextXAlignment = Enum.TextXAlignment.Left,
@@ -1100,7 +1100,7 @@ local aa = {
                             Text = k,
                             TextTransparency = 0,
                             FontFace = Font.new(
-                                "rbxasset://fonts/families/Montserrat.json",
+                                "rbxasset://fonts/families/JetBrainsMono.json",
                                 Enum.FontWeight.Bold,
                                 Enum.FontStyle.Normal
                             ),
@@ -1175,7 +1175,7 @@ local aa = {
                             TextColor3 = Color3.fromRGB(255, 255, 255),
                             TextTransparency = 0,
                             FontFace = Font.new(
-                                "rbxasset://fonts/families/Montserrat.json",
+                                "rbxasset://fonts/families/JetBrainsMono.json",
                                 Enum.FontWeight.Medium,
                                 Enum.FontStyle.Normal
                             ),
@@ -1322,7 +1322,7 @@ local aa = {
                 l(
                 "TextBox",
                 {
-                    FontFace = Font.new "rbxasset://fonts/families/Montserrat.json",
+                    FontFace = Font.new "rbxasset://fonts/families/JetBrainsMono.json",
                     TextColor3 = Color3.fromRGB(200, 200, 200),
                     TextSize = 14,
                     TextXAlignment = Enum.TextXAlignment.Left,
@@ -1520,7 +1520,7 @@ local aa = {
                                     RichText = true,
                                     Text = n.Title,
                                     FontFace = Font.new(
-                                        "rbxasset://fonts/families/Montserrat.json",
+                                        "rbxasset://fonts/families/JetBrainsMono.json",
                                         Enum.FontWeight.Bold,
                                         Enum.FontStyle.Normal
                                     ),
@@ -1540,7 +1540,7 @@ local aa = {
                                     Text = n.SubTitle,
                                     TextTransparency = 0.45,
                                     FontFace = Font.new(
-                                        "rbxasset://fonts/families/Montserrat.json",
+                                        "rbxasset://fonts/families/JetBrainsMono.json",
                                         Enum.FontWeight.Light,
                                         Enum.FontStyle.Normal
                                     ),
@@ -1676,7 +1676,7 @@ local aa = {
                     RichText = true,
                     Text = "Tab",
                     TextTransparency = 0,
-                    FontFace = Font.new("rbxasset://fonts/families/Montserrat.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal),
+                    FontFace = Font.new("rbxasset://fonts/families/JetBrainsMono.json", Enum.FontWeight.Bold, Enum.FontStyle.Normal),
                     TextSize = 26,
                     TextXAlignment = "Center",
                     TextYAlignment = "Center",
@@ -1894,7 +1894,7 @@ local aa = {
                     s(
                     "TextLabel",
                     {
-                        FontFace = Font.new "rbxasset://fonts/families/Montserrat.json",
+                        FontFace = Font.new "rbxasset://fonts/families/JetBrainsMono.json",
                         Text = O.Content,
                         TextColor3 = Color3.fromRGB(240, 240, 240),
                         TextSize = 14,
@@ -2211,7 +2211,7 @@ local aa = {
                                 "TextLabel",
                                 {
                                     FontFace = Font.new(
-                                        "rbxasset://fonts/families/Montserrat.json",
+                                        "rbxasset://fonts/families/JetBrainsMono.json",
                                         Enum.FontWeight.Medium,
                                         Enum.FontStyle.Normal
                                     ),
@@ -2651,7 +2651,7 @@ local aa = {
                     "TextLabel",
                     {
                         FontFace = Font.new(
-                            "rbxasset://fonts/families/Montserrat.json",
+                            "rbxasset://fonts/families/JetBrainsMono.json",
                             Enum.FontWeight.Regular,
                             Enum.FontStyle.Normal
                         ),
@@ -2860,7 +2860,7 @@ local aa = {
                         e(
                             "TextLabel",
                             {
-                                FontFace = Font.new "rbxasset://fonts/families/Montserrat.json",
+                                FontFace = Font.new "rbxasset://fonts/families/JetBrainsMono.json",
                                 Text = I,
                                 TextColor3 = Color3.fromRGB(200, 200, 200),
                                 TextSize = 13,
@@ -3159,7 +3159,7 @@ local aa = {
                 "TextLabel",
                 {
                     FontFace = Font.new(
-                        "rbxasset://fonts/families/Montserrat.json",
+                        "rbxasset://fonts/families/JetBrainsMono.json",
                         Enum.FontWeight.Regular,
                         Enum.FontStyle.Normal
                     ),
@@ -3392,7 +3392,7 @@ local aa = {
                 ai(
                     "TextLabel",
                     {
-                        FontFace = Font.new "rbxasset://fonts/families/Montserrat.json",
+                        FontFace = Font.new "rbxasset://fonts/families/JetBrainsMono.json",
                         Text = "Value",
                         TextSize = 12,
                         TextWrapped = true,
@@ -5080,7 +5080,7 @@ local aa = {
             ElementBorder = Color3.fromRGB(28, 14, 55),
             InElementBorder = Color3.fromRGB(50, 28, 95),
             ElementTransparency = 0.91,
-            ToggleSlider = Color3.fromRGB(72, 38, 135),
+            ToggleSlider = Color3.fromRGB(36, 30, 48),
             ToggleToggled = Color3.fromRGB(255, 255, 255),
             SliderRail = Color3.fromRGB(72, 38, 135),
             DropdownFrame = Color3.fromRGB(140, 80, 220),
@@ -5120,7 +5120,7 @@ local aa = {
             ElementBorder = Color3.fromRGB(6, 28, 52),
             InElementBorder = Color3.fromRGB(12, 52, 88),
             ElementTransparency = 0.90,
-            ToggleSlider = Color3.fromRGB(15, 65, 110),
+            ToggleSlider = Color3.fromRGB(28, 36, 50),
             ToggleToggled = Color3.fromRGB(255, 255, 255),
             SliderRail = Color3.fromRGB(15, 65, 110),
             DropdownFrame = Color3.fromRGB(50, 145, 210),
@@ -5160,7 +5160,7 @@ local aa = {
             ElementBorder = Color3.fromRGB(22, 28, 40),
             InElementBorder = Color3.fromRGB(38, 50, 70),
             ElementTransparency = 0.92,
-            ToggleSlider = Color3.fromRGB(50, 78, 105),
+            ToggleSlider = Color3.fromRGB(30, 36, 50),
             ToggleToggled = Color3.fromRGB(255, 255, 255),
             SliderRail = Color3.fromRGB(50, 78, 105),
             DropdownFrame = Color3.fromRGB(100, 160, 210),
@@ -5200,7 +5200,7 @@ local aa = {
             ElementBorder = Color3.fromRGB(32, 28, 14),
             InElementBorder = Color3.fromRGB(55, 48, 24),
             ElementTransparency = 0.91,
-            ToggleSlider = Color3.fromRGB(100, 85, 40),
+            ToggleSlider = Color3.fromRGB(38, 34, 28),
             ToggleToggled = Color3.fromRGB(255, 255, 255),
             SliderRail = Color3.fromRGB(100, 85, 40),
             DropdownFrame = Color3.fromRGB(180, 155, 85),
@@ -5240,7 +5240,7 @@ local aa = {
             ElementBorder = Color3.fromRGB(210, 210, 225),
             InElementBorder = Color3.fromRGB(195, 195, 212),
             ElementTransparency = 0.55,
-            ToggleSlider = Color3.fromRGB(160, 160, 180),
+            ToggleSlider = Color3.fromRGB(185, 186, 198),
             ToggleToggled = Color3.fromRGB(255, 255, 255),
             SliderRail = Color3.fromRGB(160, 160, 180),
             DropdownFrame = Color3.fromRGB(220, 220, 235),
@@ -5280,7 +5280,7 @@ local aa = {
             ElementBorder = Color3.fromRGB(45, 10, 20),
             InElementBorder = Color3.fromRGB(75, 22, 40),
             ElementTransparency = 0.91,
-            ToggleSlider = Color3.fromRGB(120, 32, 55),
+            ToggleSlider = Color3.fromRGB(40, 28, 32),
             ToggleToggled = Color3.fromRGB(255, 255, 255),
             SliderRail = Color3.fromRGB(120, 32, 55),
             DropdownFrame = Color3.fromRGB(205, 70, 108),
@@ -5320,7 +5320,7 @@ local aa = {
             ElementBorder = Color3.fromRGB(0, 35, 27),
             InElementBorder = Color3.fromRGB(0, 62, 46),
             ElementTransparency = 0.93,
-            ToggleSlider = Color3.fromRGB(0, 85, 62),
+            ToggleSlider = Color3.fromRGB(22, 36, 30),
             ToggleToggled = Color3.fromRGB(255, 255, 255),
             SliderRail = Color3.fromRGB(0, 85, 62),
             DropdownFrame = Color3.fromRGB(0, 200, 145),
@@ -5360,7 +5360,7 @@ local aa = {
             ElementBorder = Color3.fromRGB(28, 18, 54),
             InElementBorder = Color3.fromRGB(50, 34, 95),
             ElementTransparency = 0.93,
-            ToggleSlider = Color3.fromRGB(65, 44, 120),
+            ToggleSlider = Color3.fromRGB(30, 24, 46),
             ToggleToggled = Color3.fromRGB(255, 255, 255),
             SliderRail = Color3.fromRGB(65, 44, 120),
             DropdownFrame = Color3.fromRGB(118, 84, 210),
