@@ -3007,12 +3007,12 @@ local aa = {
             end
             function l.AddValues(B, C)
                 local AllButtons = l.Buttons
-                local added = false
+                local newCount = 0
                 for _, I in ipairs(C) do
                     if not l.RenderedValues[I] then
                         table.insert(l.Values, I)
                         l.RenderedValues[I] = true
-                        added = true
+                        newCount = newCount + 1
                         local J = {}
                         local K, L =
                             e(
@@ -3105,9 +3105,12 @@ local aa = {
                         J:UpdateButton()
                         l:Display()
                         AllButtons[M] = J
+                        if newCount % 20 == 0 then
+                            task.wait()
+                        end
                     end
                 end
-                if added then
+                if newCount > 0 then
                     x = 0
                     for J, K in next, AllButtons do
                         if J.ButtonLabel then
