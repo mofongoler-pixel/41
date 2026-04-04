@@ -1353,7 +1353,7 @@ local aa = {
                     Size = UDim2.new(1, -22, 0, 1),
                     Position = UDim2.new(0, 11, 1, 0),
                     AnchorPoint = Vector2.new(0, 1),
-                    BackgroundTransparency = n and 0.5 or 0,
+                    BackgroundTransparency = 1,
                     ThemeTag = {BackgroundColor3 = n and "InputIndicator" or "DialogInputLine"}
                 }
             )
@@ -1405,9 +1405,7 @@ local aa = {
                 o.Input.Focused,
                 function()
                     p()
-                    o.Indicator.Size = UDim2.new(1, -2, 0, 2)
-                    o.Indicator.Position = UDim2.new(0, 1, 1, 0)
-                    o.Indicator.BackgroundTransparency = 0
+                    o.Indicator.BackgroundTransparency = 1
                     k.OverrideTag(o.Frame, {BackgroundColor3 = n and "InputFocused" or "DialogHolder"})
                     k.OverrideTag(o.Indicator, {BackgroundColor3 = "Accent"})
                 end
@@ -1416,9 +1414,7 @@ local aa = {
                 o.Input.FocusLost,
                 function()
                     p()
-                    o.Indicator.Size = UDim2.new(1, -4, 0, 1)
-                    o.Indicator.Position = UDim2.new(0, 2, 1, 0)
-                    o.Indicator.BackgroundTransparency = 0.5
+                    o.Indicator.BackgroundTransparency = 1
                     k.OverrideTag(o.Frame, {BackgroundColor3 = n and "Input" or "DialogInput"})
                     k.OverrideTag(o.Indicator, {BackgroundColor3 = n and "InputIndicator" or "DialogInputLine"})
                 end
@@ -2685,7 +2681,7 @@ local aa = {
                 e(
                     "TextButton",
                     {
-                        Size = UDim2.fromOffset(200, 30),
+                        Size = UDim2.fromOffset(160, 30),
                         Position = UDim2.new(1, -10, 0.5, 0),
                         AnchorPoint = Vector2.new(1, 0.5),
                         BackgroundTransparency = 0.9,
@@ -2754,8 +2750,8 @@ local aa = {
             local v =
                 e(
                 "Frame",
-                {BackgroundTransparency = 1, Size = UDim2.fromOffset(170, 300), Parent = h.Library.GUI, Visible = false},
-                {u, e("UISizeConstraint", {MinSize = Vector2.new(170, 0)})}
+                {BackgroundTransparency = 1, Size = UDim2.fromOffset(250, 300), Parent = h.Library.GUI, Visible = false},
+                {u, e("UISizeConstraint", {MinSize = Vector2.new(250, 0)})}
             )
             table.insert(k.OpenFrames, v)
             local w, x = function()
