@@ -2793,6 +2793,14 @@ local aa = {
             )
             local A = h.ScrollFrame
             function l.Open(B)
+                local maxW = 0
+                for _, I in ipairs(l.Values) do
+                    local tw = TextService:GetTextSize(I, 13, Enum.Font.Gotham, Vector2.new(math.huge, 32)).X
+                    if tw > maxW then maxW = tw end
+                end
+                x = maxW + 30
+                y()
+                w()
                 l.Opened = true
                 A.ScrollingEnabled = false
                 v.Visible = true
