@@ -2621,6 +2621,7 @@ local aa = {
         game:GetService "Players".LocalPlayer:GetMouse(),
         game:GetService "Workspace".CurrentCamera,
             ab.Parent.Parent
+        local TextService = game:GetService("TextService")
         local c, d = ac(aj.Creator), ac(aj.Packages.Flipper)
         local e, f, g = c.New, aj.Components, {}
         g.__index = g
@@ -2750,8 +2751,8 @@ local aa = {
             local v =
                 e(
                 "Frame",
-                {BackgroundTransparency = 1, Size = UDim2.fromOffset(250, 300), Parent = h.Library.GUI, Visible = false},
-                {u, e("UISizeConstraint", {MinSize = Vector2.new(250, 0)})}
+                {BackgroundTransparency = 1, Size = UDim2.fromOffset(170, 300), Parent = h.Library.GUI, Visible = false},
+                {u, e("UISizeConstraint", {MinSize = Vector2.new(170, 0)})}
             )
             table.insert(k.OpenFrames, v)
             local w, x = function()
@@ -2844,6 +2845,7 @@ local aa = {
                         F:Destroy()
                     end
                 end
+                x = 0
                 local G = 0
                 for H, I in next, C do
                     local J = {}
@@ -2970,21 +2972,14 @@ local aa = {
                     J:UpdateButton()
                     D[M] = J
                     l.RenderedValues[I] = true
+                    local tw = TextService:GetTextSize(I, 13, Enum.Font.Gotham, Vector2.new(math.huge, 32)).X + 30
+                    if tw > x then x = tw end
                     if G % 20 == 0 then
                         task.wait()
                         if l._buildGen ~= myGen then return end
                     end
                 end
                 if l._buildGen ~= myGen then return end
-                x = 0
-                for J, K in next, D do
-                    if J.ButtonLabel then
-                        if J.ButtonLabel.TextBounds.X > x then
-                            x = J.ButtonLabel.TextBounds.X
-                        end
-                    end
-                end
-                x = x + 30
                 z()
                 y()
                 l:Display()
@@ -3100,21 +3095,14 @@ local aa = {
                         end)
                         J:UpdateButton()
                         AllButtons[M] = J
+                        local tw = TextService:GetTextSize(I, 13, Enum.Font.Gotham, Vector2.new(math.huge, 32)).X + 30
+                        if tw > x then x = tw end
                         if newCount % 20 == 0 then
                             task.wait()
                         end
                     end
                 end
                 if newCount > 0 then
-                    x = 0
-                    for J, K in next, AllButtons do
-                        if J.ButtonLabel then
-                            if J.ButtonLabel.TextBounds.X > x then
-                                x = J.ButtonLabel.TextBounds.X
-                            end
-                        end
-                    end
-                    x = x + 30
                     z()
                     y()
                     l:Display()
