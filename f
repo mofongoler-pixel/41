@@ -1350,8 +1350,8 @@ local aa = {
                 l(
                 "Frame",
                 {
-                    Size = UDim2.new(1, -4, 0, 1),
-                    Position = UDim2.new(0, 2, 1, 0),
+                    Size = UDim2.new(1, -22, 0, 1),
+                    Position = UDim2.new(0, 11, 1, 0),
                     AnchorPoint = Vector2.new(0, 1),
                     BackgroundTransparency = n and 0.5 or 0,
                     ThemeTag = {BackgroundColor3 = n and "InputIndicator" or "DialogInputLine"}
@@ -2685,7 +2685,7 @@ local aa = {
                 e(
                     "TextButton",
                     {
-                        Size = UDim2.fromOffset(160, 30),
+                        Size = UDim2.fromOffset(200, 30),
                         Position = UDim2.new(1, -10, 0.5, 0),
                         AnchorPoint = Vector2.new(1, 0.5),
                         BackgroundTransparency = 0.9,
