@@ -29,8 +29,22 @@ local SaveManager = {} do
 				return { type = "Dropdown", idx = idx, value = object.Value, mutli = object.Multi }
 			end,
 			Load = function(idx, data)
-				if SaveManager.Options[idx] then 
-					SaveManager.Options[idx]:SetValue(data.value)
+				if SaveManager.Options[idx] then
+					local obj = SaveManager.Options[idx]
+					if data.mutli then
+						local missing = {}
+						for k in next, data.value do
+							if not table.find(obj.Values, k) then
+								table.insert(missing, k)
+							end
+						end
+						if #missing > 0 then obj:AddValues(missing) end
+					else
+						if data.value and not table.find(obj.Values, data.value) then
+							obj:AddValues({data.value})
+						end
+					end
+					obj:SetValue(data.value)
 				end
 			end,
 		},
