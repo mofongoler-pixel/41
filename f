@@ -2942,6 +2942,8 @@ local aa = {
                             N = l.Value[I]
                             if N then
                                 P(0.89)
+                            else
+                                P(1)
                             end
                         else
                             N = l.Value == I
@@ -3071,7 +3073,7 @@ local aa = {
                         function J.UpdateButton(T)
                             if j.Multi then
                                 N = l.Value[I]
-                                if N then P(0.89) end
+                                if N then P(0.89) else P(1) end
                             else
                                 N = l.Value == I
                                 P(N and 0.89 or 1)
