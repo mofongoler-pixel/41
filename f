@@ -2703,7 +2703,7 @@ local aa = {
                         n
                     }
                 ),
-                e("UIListLayout", {Padding = UDim.new(0, 3)})
+                e("UIListLayout", {Padding = UDim.new(0, 3), SortOrder = Enum.SortOrder.Name})
             local t =
                 e(
                 "ScrollingFrame",
@@ -2887,10 +2887,12 @@ local aa = {
                                 ThemeTag = {TextColor3 = "Text"}
                             }
                         )
+                    local sortName = I == "All" and "!1" or I == "None" and "!2" or I
                     local M, N =
                         (e(
                         "TextButton",
                         {
+                            Name = sortName,
                             Size = UDim2.new(1, -5, 0, 32),
                             BackgroundTransparency = 1,
                             ZIndex = 23,
@@ -3044,10 +3046,12 @@ local aa = {
                                     ThemeTag = {TextColor3 = "Text"}
                                 }
                             )
+                        local sortName = I == "All" and "!1" or I == "None" and "!2" or I
                         local M, N =
                             (e(
                             "TextButton",
                             {
+                                Name = sortName,
                                 Size = UDim2.new(1, -5, 0, 32),
                                 BackgroundTransparency = 1,
                                 ZIndex = 23,
